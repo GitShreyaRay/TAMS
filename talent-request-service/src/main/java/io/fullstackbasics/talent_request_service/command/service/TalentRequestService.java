@@ -3,6 +3,8 @@ package io.fullstackbasics.talent_request_service.command.service;
 import java.util.UUID;
 
 import org.axonframework.commandhandling.gateway.CommandGateway;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,6 +19,7 @@ import io.fullstackbasics.talent_request_service.command.dto.TalentRequestRespon
 public class TalentRequestService {
 	
 	private final CommandGateway commandGateway;
+	private final Logger log = LoggerFactory.getLogger(TalentRequestService.class);
 	
 	public TalentRequestService(CommandGateway commandGateway) {
 		this.commandGateway = commandGateway;
@@ -32,6 +35,8 @@ public class TalentRequestService {
 				.candidateSkills(createTalentRequestCommandDTO.getCandidateSkills())
 				.startDate(createTalentRequestCommandDTO.getStartDate())
 				.build();
+		
+		log.info("-------------After CreateTalentRequestCommand.build() coreSkill " + createTalentRequestCommand.getCandidateSkills().getCoreskill() + "-------------");
 		
 		try {
 			commandGateway.sendAndWait(createTalentRequestCommand);

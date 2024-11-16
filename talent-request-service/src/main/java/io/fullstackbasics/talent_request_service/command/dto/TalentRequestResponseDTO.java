@@ -6,8 +6,8 @@ import lombok.Data;
 @Data
 public class TalentRequestResponseDTO {
 	
-	private String talentReuestId;
-	private String talentReuestTitle;
+	private String talentRequestId;
+	private String talentRequestTitle;
 	private RequestStatus requestStatus;
 
 }
