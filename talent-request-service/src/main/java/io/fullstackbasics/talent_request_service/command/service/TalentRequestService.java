@@ -37,7 +37,7 @@ public class TalentRequestService {
 				.startDate(createTalentRequestCommandDTO.getStartDate())
 				.build();
 		
-		log.info("-------------After CreateTalentRequestCommand.build() coreSkill " + createTalentRequestCommand.getCandidateSkills().getCoreskill() + "-------------");
+		log.info("-------------After CreateTalentRequestCommand.build() coreSkill " + createTalentRequestCommand.getCandidateSkills().getCoreSkill() + "-------------");
 		
 		try {
 			commandGateway.sendAndWait(createTalentRequestCommand);

@@ -24,7 +24,7 @@ public class TalentRequestCommandController {
 	
 	@PostMapping
 	public ResponseEntity createTalentRequest(@RequestBody CreateTalentRequestCommandDTO createTalentRequestCommandDTO) {
-		log.info("-------------createTalentRequest:createTalentRequestCommandDTO coreSkills" + createTalentRequestCommandDTO.getCandidateSkills().getCoreskill() + "-------------");
+		log.info("-------------createTalentRequest:createTalentRequestCommandDTO coreSkills" + createTalentRequestCommandDTO.getCandidateSkills().getCoreSkill() + "-------------");
 		return talentRequestService.createNewTalentRequest(createTalentRequestCommandDTO);
 	}
 
