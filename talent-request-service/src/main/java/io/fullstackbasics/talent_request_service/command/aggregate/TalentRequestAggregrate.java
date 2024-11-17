@@ -9,11 +9,13 @@ import org.axonframework.modelling.command.AggregateLifecycle;
 import org.axonframework.spring.stereotype.Aggregate;
 import org.springframework.beans.BeanUtils;
 
+import fullstackbasics.io.tams_core_api.command.UpdateTalentRequestStatusCommand;
 import fullstackbasics.io.tams_core_api.domain.CandidateSkills;
 import fullstackbasics.io.tams_core_api.domain.JobDescription;
 import fullstackbasics.io.tams_core_api.domain.RequestStatus;
 import io.fullstackbasics.talent_request_service.command.command.CreateTalentRequestCommand;
 import io.fullstackbasics.talent_request_service.core.events.TalentRequestCreatedEvent;
+import io.fullstackbasics.talent_request_service.core.events.TalentRequestStatusUpdatedEvent;
 
 @Aggregate
 public class TalentRequestAggregrate {
@@ -46,4 +48,16 @@ public class TalentRequestAggregrate {
 		this.requestStatus = talentRequestCreatedEvent.getRequestStatus();
 		this.startDate = talentRequestCreatedEvent.getStartDate();
 	}
+	
+	@CommandHandler
+	public void handle(UpdateTalentRequestStatusCommand updateTalentRequestStatusCommand) {
+		TalentRequestStatusUpdatedEvent talentRequestStatusUpdatedEvent = new TalentRequestStatusUpdatedEvent();
+		BeanUtils.copyProperties(updateTalentRequestStatusCommand,talentRequestStatusUpdatedEvent);
+		AggregateLifecycle.apply(talentRequestStatusUpdatedEvent);
+	}
+	
+	public void on(TalentRequestStatusUpdatedEvent talentRequestStatusUpdatedEvent) {
+		requestStatus = talentRequestStatusUpdatedEvent.getRequestStatus();
+	}
+	
 }

@@ -9,7 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import io.fullstackbasics.talent_request_service.query.dto.TalentRequestQueryResponseDTO;
+import io.fullstackbasics.talent_request_service.query.dto.TalentFulfillmentQueryResponseDTO;
 import io.fullstackbasics.talent_request_service.query.query.FindTalentRequestByTalentRequestIdQuery;
 import io.fullstackbasics.talent_request_service.query.query.FindTalentRequestsQuery;
 
@@ -25,8 +25,8 @@ public class TalentRequestQueryService {
 	public ResponseEntity findAllTalentRequests() {
 
 		FindTalentRequestsQuery findTalentRequestsQuery = new FindTalentRequestsQuery();
-		List<TalentRequestQueryResponseDTO> talentRequestResponseDTOList = queryGateway
-				.query(findTalentRequestsQuery, ResponseTypes.multipleInstancesOf(TalentRequestQueryResponseDTO.class))
+		List<TalentFulfillmentQueryResponseDTO> talentRequestResponseDTOList = queryGateway
+				.query(findTalentRequestsQuery, ResponseTypes.multipleInstancesOf(TalentFulfillmentQueryResponseDTO.class))
 				.join();
 
 		return new ResponseEntity(talentRequestResponseDTOList, HttpStatus.OK);
@@ -35,7 +35,7 @@ public class TalentRequestQueryService {
 	public ResponseEntity findTalentRequestByTalentRequestId (String talentRequestId) throws ExecutionException, InterruptedException {
 		FindTalentRequestByTalentRequestIdQuery findTalentRequestByTalentRequestIdQuery = new FindTalentRequestByTalentRequestIdQuery(talentRequestId);
 		
-		TalentRequestQueryResponseDTO talentRequestQueryResponseDTO = queryGateway.query(findTalentRequestByTalentRequestIdQuery, ResponseTypes.instanceOf(TalentRequestQueryResponseDTO.class)).get();
+		TalentFulfillmentQueryResponseDTO talentRequestQueryResponseDTO = queryGateway.query(findTalentRequestByTalentRequestIdQuery, ResponseTypes.instanceOf(TalentFulfillmentQueryResponseDTO.class)).get();
 		
 		return new ResponseEntity(talentRequestQueryResponseDTO, HttpStatus.OK);
     }

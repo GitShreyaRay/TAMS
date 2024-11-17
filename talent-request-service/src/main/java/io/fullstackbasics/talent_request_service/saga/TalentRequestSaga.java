@@ -3,12 +3,15 @@ package io.fullstackbasics.talent_request_service.saga;
 import java.util.UUID;
 
 import org.axonframework.commandhandling.gateway.CommandGateway;
+import org.axonframework.modelling.saga.EndSaga;
 import org.axonframework.modelling.saga.SagaEventHandler;
 import org.axonframework.modelling.saga.StartSaga;
 import org.axonframework.spring.stereotype.Saga;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import fullstackbasics.io.tams_core_api.command.CreateTalentFulfillmentCommand;
+import fullstackbasics.io.tams_core_api.command.UpdateTalentRequestStatusCommand;
+import fullstackbasics.io.tams_core_api.event.TalentFulfillmentCreatedEvent;
 import io.fullstackbasics.talent_request_service.core.events.TalentRequestCreatedEvent;
 
 @Saga
@@ -36,5 +39,16 @@ public class TalentRequestSaga {
 		commandGateway.send(createTalentFulfillmentCommand);
 				
 		
+	}
+	
+	@EndSaga
+	@SagaEventHandler(associationProperty=TALENT_REQUEST_ID)
+	public void handle(TalentFulfillmentCreatedEvent talentFilfillmentCreatedEvent) {
+		UpdateTalentRequestStatusCommand updateTalentRequestStatusCommand = UpdateTalentRequestStatusCommand.builder()
+				.talentRequestId(talentFilfillmentCreatedEvent.getTalentRequestId())
+				.requestStatus(talentFilfillmentCreatedEvent.getRequestStatus())
+				.build();
+		
+		commandGateway.send(updateTalentRequestStatusCommand);
 	}
 }

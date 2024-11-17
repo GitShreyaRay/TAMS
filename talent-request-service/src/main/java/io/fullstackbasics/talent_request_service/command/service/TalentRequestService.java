@@ -27,6 +27,7 @@ public class TalentRequestService {
 
 	public ResponseEntity createNewTalentRequest(CreateTalentRequestCommandDTO createTalentRequestCommandDTO) {
 		
+		log.info("coreSkill :" + createTalentRequestCommandDTO.getCandidateSkills().getCoreSkill());
 		CreateTalentRequestCommand createTalentRequestCommand = CreateTalentRequestCommand.builder()
 				.talentRequestId(UUID.randomUUID().toString())
 				.requestStatus(RequestStatus.OPEN)

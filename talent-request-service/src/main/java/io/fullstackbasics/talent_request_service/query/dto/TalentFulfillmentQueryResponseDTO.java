@@ -8,7 +8,7 @@ import fullstackbasics.io.tams_core_api.domain.RequestStatus;
 import lombok.Data;
 
 @Data
-public class TalentRequestQueryResponseDTO {
+public class TalentFulfillmentQueryResponseDTO {
  
     private String talentRequestId;
     private String talentRequestTitle;

@@ -10,7 +10,7 @@ import lombok.Data;
 public class CandidateSkills {
 	
 	@Enumerated(EnumType.STRING)
-	private CoreSkill coreskill;
+	private CoreSkill coreSkill;
 	@Enumerated(EnumType.STRING)
 	private SkillLevel skillLevel;
 }

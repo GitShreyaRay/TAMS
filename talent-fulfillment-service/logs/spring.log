@@ -1,0 +1,701 @@
+2024-11-17T12:47:34.888+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] .f.t.TalentFulfillmentServiceApplication : Starting TalentFulfillmentServiceApplication using Java 17.0.5 with PID 23368 (C:\Users\shrey\git\TAMS\talent-fulfillment-service\target\classes started by shrey in C:\Users\shrey\git\TAMS\talent-fulfillment-service)
+2024-11-17T12:47:34.893+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] .f.t.TalentFulfillmentServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-17T12:47:34.948+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-17T12:47:34.949+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-17T12:47:35.030+05:30  WARN 23368 --- [talent-fulfillment-service] [restartedMain] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.axonframework.spring.stereotype.Aggregate with appropriate @AliasFor declarations: [type]
+2024-11-17T12:47:35.037+05:30  WARN 23368 --- [talent-fulfillment-service] [restartedMain] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2024-11-17T12:47:35.038+05:30  WARN 23368 --- [talent-fulfillment-service] [restartedMain] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2024-11-17T12:47:35.051+05:30  WARN 23368 --- [talent-fulfillment-service] [restartedMain] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.axonframework.eventhandling.EventHandler with appropriate @AliasFor declarations: [payloadType]
+2024-11-17T12:47:35.803+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-17T12:47:35.954+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 137 ms. Found 1 JPA repository interface.
+2024-11-17T12:47:36.214+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d9df7e3-dfed-306f-85bc-53bc918a0c04
+2024-11-17T12:47:36.531+05:30  WARN 23368 --- [talent-fulfillment-service] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-11-17T12:47:36.533+05:30  WARN 23368 --- [talent-fulfillment-service] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-11-17T12:47:36.754+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-11-17T12:47:36.762+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-17T12:47:36.763+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-17T12:47:36.830+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-17T12:47:36.830+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1880 ms
+2024-11-17T12:47:36.857+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-17T12:47:36.997+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:talent_fulfillment user=SA
+2024-11-17T12:47:36.999+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-17T12:47:37.009+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:talent_fulfillment'
+2024-11-17T12:47:37.155+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-17T12:47:37.252+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-11-17T12:47:37.295+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-17T12:47:37.523+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-17T12:47:38.658+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-17T12:47:38.703+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-17T12:47:38.904+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.Dom4JToByteArrayConverter] is ignored. It seems to rely on a class that is not available in the class loader: org/dom4j/Document
+2024-11-17T12:47:38.905+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.InputStreamToDom4jConverter] is ignored. It seems to rely on a class that is not available in the class loader: org/dom4j/Document
+2024-11-17T12:47:38.905+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.XomToStringConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/Document
+2024-11-17T12:47:38.906+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.InputStreamToXomConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/ParsingException
+2024-11-17T12:47:38.932+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.a.config.AxonIQConsoleModule           : 
+################################################################################################
+## You have not configured AxonIQ Console. AxonIQ Console provides out-of-the box monitoring  ##
+## and management capabilities for your Axon Application, starting with it is free.           ##
+## Visit https://console.axoniq.io for more information!                                      ##
+## Suppress this message by setting system property disable-axoniq-console-message to true.   ##
+################################################################################################
+
+2024-11-17T12:47:39.178+05:30  WARN 23368 --- [talent-fulfillment-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-17T12:47:39.226+05:30 DEBUG 23368 --- [talent-fulfillment-service] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-11-17T12:47:39.285+05:30 DEBUG 23368 --- [talent-fulfillment-service] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-17T12:47:39.305+05:30 DEBUG 23368 --- [talent-fulfillment-service] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-17T12:47:39.326+05:30 DEBUG 23368 --- [talent-fulfillment-service] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-17T12:47:39.521+05:30  WARN 23368 --- [talent-fulfillment-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-11-17T12:47:39.824+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-11-17T12:47:39.857+05:30  WARN 23368 --- [talent-fulfillment-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-11-17T12:47:40.114+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] i.a.a.c.impl.AxonServerManagedChannel    : Requesting connection details from localhost:8124
+2024-11-17T12:47:40.347+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] i.a.a.c.impl.AxonServerManagedChannel    : Successfully connected to localhost:8124
+2024-11-17T12:47:40.356+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] i.a.a.connector.impl.ControlChannelImpl  : Connected instruction stream for context 'default'. Sending client identification
+2024-11-17T12:47:40.369+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] i.a.a.c.command.impl.CommandChannelImpl  : CommandChannel for context 'default' connected, 0 command handlers registered
+2024-11-17T12:47:40.372+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] i.a.a.c.command.impl.CommandChannelImpl  : Registered handler for command 'fullstackbasics.io.tams_core_api.command.CreateTalentFulfillmentCommand' in context 'default'
+2024-11-17T12:47:40.404+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] i.a.a.c.query.impl.QueryChannelImpl      : QueryChannel for context 'default' connected, 0 registrations resubscribed
+2024-11-17T12:47:40.410+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] i.a.a.c.query.impl.QueryChannelImpl      : Registered handler for query 'io.fullstackbasics.talent_fulfillment_service.query.query.FindTalentFulfillmentByTalentFulfillmentIdQuery : io.fullstackbasics.talent_fulfillment_service.query.dto.TalentFulfillmentQueryResponseDTO' in context 'default'
+2024-11-17T12:47:40.411+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] i.a.a.c.query.impl.QueryChannelImpl      : Registered handler for query 'io.fullstackbasics.talent_fulfillment_service.query.query.FindAllTalentFulfillmentRequestsQuery : java.util.List<io.fullstackbasics.talent_fulfillment_service.query.dto.TalentFulfillmentQueryResponseDTO>' in context 'default'
+2024-11-17T12:47:40.573+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 59596 (http) with context path '/'
+2024-11-17T12:47:40.574+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 59596
+2024-11-17T12:47:40.578+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-11-17T12:47:40.599+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-11-17T12:47:40.603+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-11-17T12:47:40.610+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-11-17T12:47:40.611+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-11-17T12:47:40.611+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-11-17T12:47:40.611+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-11-17T12:47:40.611+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-11-17T12:47:40.611+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-11-17T12:47:40.611+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-11-17T12:47:40.744+05:30  INFO 23368 --- [talent-fulfillment-service] [EventProcessor[io.fullstackbasics.talent_fulfillment_service.query.eventhandler]-0] o.a.e.TrackingEventProcessor             : Worker assigned to segment Segment[0/0] for processing
+2024-11-17T12:47:40.752+05:30  INFO 23368 --- [talent-fulfillment-service] [EventProcessor[io.fullstackbasics.talent_fulfillment_service.query.eventhandler]-0] o.a.e.TrackingEventProcessor             : Using current Thread for last segment worker: TrackingSegmentWorker{processor=io.fullstackbasics.talent_fulfillment_service.query.eventhandler, segment=Segment[0/0]}
+2024-11-17T12:47:40.754+05:30  INFO 23368 --- [talent-fulfillment-service] [EventProcessor[io.fullstackbasics.talent_fulfillment_service.query.eventhandler]-0] o.a.e.TrackingEventProcessor             : Fetched token: null for segment: Segment[0/0]
+2024-11-17T12:47:40.767+05:30 DEBUG 23368 --- [talent-fulfillment-service] [restartedMain] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2024-11-17T12:47:40.854+05:30 DEBUG 23368 --- [talent-fulfillment-service] [restartedMain] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:47:40.894+05:30 DEBUG 23368 --- [talent-fulfillment-service] [restartedMain] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:47:40.896+05:30 DEBUG 23368 --- [talent-fulfillment-service] [restartedMain] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:47:40.917+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-11-17T12:47:40.918+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-11-17T12:47:40.920+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-11-17T12:47:40.921+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1731827860920 with initial instances count: 0
+2024-11-17T12:47:40.923+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TALENT-FULFILLMENT-SERVICE with eureka with status UP
+2024-11-17T12:47:40.924+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1731827860924, current=UP, previous=STARTING]
+2024-11-17T12:47:40.929+05:30  INFO 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d: registering service...
+2024-11-17T12:47:40.932+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE
+2024-11-17T12:47:40.935+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:47:40.945+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d, appName = TALENT-FULFILLMENT-SERVICE, hostName = 192.168.1.36, status = UP, ipAddr = 192.168.1.36, port = 59596, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@43f0e0c4] as "application/json"
+2024-11-17T12:47:40.959+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2024-11-17T12:47:40.960+05:30  INFO 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d - registration status: 204
+2024-11-17T12:47:41.054+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] .f.t.TalentFulfillmentServiceApplication : Started TalentFulfillmentServiceApplication in 6.757 seconds (process running for 7.446)
+2024-11-17T12:48:10.924+05:30  INFO 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-11-17T12:48:10.925+05:30  INFO 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-11-17T12:48:10.925+05:30  INFO 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-11-17T12:48:10.925+05:30  INFO 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-11-17T12:48:10.925+05:30  INFO 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-11-17T12:48:10.925+05:30  INFO 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-11-17T12:48:10.925+05:30  INFO 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-11-17T12:48:10.925+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2024-11-17T12:48:10.925+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d?status=UP&lastDirtyTimestamp=1731827860924
+2024-11-17T12:48:10.925+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:48:10.934+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:48:10.934+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:48:10.936+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:48:10.948+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:48:10.949+05:30  INFO 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-11-17T12:48:40.967+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d?status=UP&lastDirtyTimestamp=1731827860924
+2024-11-17T12:48:40.967+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-17T12:48:40.967+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:48:40.967+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:48:40.972+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:48:40.972+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:48:40.975+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:49:10.986+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d?status=UP&lastDirtyTimestamp=1731827860924
+2024-11-17T12:49:10.986+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-17T12:49:10.986+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:49:10.986+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:49:10.990+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:49:10.990+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:49:10.993+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:49:16.889+05:30  INFO 23368 --- [talent-fulfillment-service] [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-17T12:49:16.889+05:30  INFO 23368 --- [talent-fulfillment-service] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-17T12:49:16.890+05:30 DEBUG 23368 --- [talent-fulfillment-service] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-11-17T12:49:16.890+05:30 DEBUG 23368 --- [talent-fulfillment-service] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-11-17T12:49:16.890+05:30 DEBUG 23368 --- [talent-fulfillment-service] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-11-17T12:49:16.891+05:30 DEBUG 23368 --- [talent-fulfillment-service] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2abc8351
+2024-11-17T12:49:16.891+05:30 DEBUG 23368 --- [talent-fulfillment-service] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7acd4163
+2024-11-17T12:49:16.891+05:30 DEBUG 23368 --- [talent-fulfillment-service] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-17T12:49:16.892+05:30  INFO 23368 --- [talent-fulfillment-service] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-17T12:49:16.901+05:30 DEBUG 23368 --- [talent-fulfillment-service] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/talent-fulfillment", parameters={}
+2024-11-17T12:49:16.906+05:30 DEBUG 23368 --- [talent-fulfillment-service] [http-nio-auto-1-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.fullstackbasics.talent_fulfillment_service.query.controller.TalentFulfillmentQueryController#findAllTalentRequests()
+2024-11-17T12:49:17.001+05:30 DEBUG 23368 --- [talent-fulfillment-service] [http-nio-auto-1-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-17T12:49:17.005+05:30 DEBUG 23368 --- [talent-fulfillment-service] [http-nio-auto-1-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[TalentFulfillmentQueryResponseDTO(talentFulfillmentId=7a6b1ce0-c9cf-43be-b572-2b697e4aaccc, jobPost (truncated)...]
+2024-11-17T12:49:17.016+05:30 DEBUG 23368 --- [talent-fulfillment-service] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-17T12:49:41.005+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-17T12:49:41.005+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d?status=UP&lastDirtyTimestamp=1731827860924
+2024-11-17T12:49:41.006+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:49:41.006+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:49:41.010+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:49:41.010+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:49:41.013+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:50:11.015+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d?status=UP&lastDirtyTimestamp=1731827860924
+2024-11-17T12:50:11.016+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-17T12:50:11.016+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:50:11.016+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:50:11.022+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:50:11.022+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:50:11.023+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:50:41.035+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d?status=UP&lastDirtyTimestamp=1731827860924
+2024-11-17T12:50:41.036+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:50:41.040+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:50:41.040+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-17T12:50:41.041+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:50:41.044+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:50:41.044+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:51:11.058+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-17T12:51:11.058+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:51:11.058+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d?status=UP&lastDirtyTimestamp=1731827860924
+2024-11-17T12:51:11.059+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:51:11.063+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:51:11.063+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:51:11.064+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:51:41.073+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-17T12:51:41.074+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d?status=UP&lastDirtyTimestamp=1731827860924
+2024-11-17T12:51:41.074+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:51:41.074+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:51:41.081+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:51:41.082+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:51:41.082+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:52:11.083+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d?status=UP&lastDirtyTimestamp=1731827860924
+2024-11-17T12:52:11.083+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:52:11.092+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:52:11.093+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-17T12:52:11.094+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:52:11.099+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:52:11.099+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:52:40.618+05:30  INFO 23368 --- [talent-fulfillment-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-11-17T12:52:41.101+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-17T12:52:41.102+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:52:41.108+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:52:41.109+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:52:41.110+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d?status=UP&lastDirtyTimestamp=1731827860924
+2024-11-17T12:52:41.110+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:52:41.117+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:53:11.121+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d?status=UP&lastDirtyTimestamp=1731827860924
+2024-11-17T12:53:11.122+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:53:11.130+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:53:11.132+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-17T12:53:11.133+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:53:11.140+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:53:11.141+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:53:41.142+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d?status=UP&lastDirtyTimestamp=1731827860924
+2024-11-17T12:53:41.143+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:53:41.147+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-17T12:53:41.147+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:53:41.151+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:53:41.152+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:53:41.152+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:54:11.154+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-17T12:54:11.155+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:54:11.156+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d?status=UP&lastDirtyTimestamp=1731827860924
+2024-11-17T12:54:11.156+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:54:11.163+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:54:11.163+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:54:11.166+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:54:41.172+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-17T12:54:41.174+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:54:41.176+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d?status=UP&lastDirtyTimestamp=1731827860924
+2024-11-17T12:54:41.177+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:54:41.180+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:54:41.181+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:54:41.185+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:55:11.183+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-17T12:55:11.186+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:55:11.192+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:55:11.192+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:55:11.193+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d?status=UP&lastDirtyTimestamp=1731827860924
+2024-11-17T12:55:11.193+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:55:11.197+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:55:13.343+05:30  INFO 23368 --- [talent-fulfillment-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-17T12:55:13.345+05:30  INFO 23368 --- [talent-fulfillment-service] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application TALENT-FULFILLMENT-SERVICE with eureka with status DOWN
+2024-11-17T12:55:13.345+05:30  INFO 23368 --- [talent-fulfillment-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1731828313345, current=DOWN, previous=UP]
+2024-11-17T12:55:13.345+05:30  INFO 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d: registering service...
+2024-11-17T12:55:13.345+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE
+2024-11-17T12:55:13.345+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:55:13.346+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d, appName = TALENT-FULFILLMENT-SERVICE, hostName = 192.168.1.36, status = DOWN, ipAddr = 192.168.1.36, port = 59596, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@43f0e0c4] as "application/json"
+2024-11-17T12:55:13.350+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2024-11-17T12:55:13.350+05:30  INFO 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d - registration status: 204
+2024-11-17T12:55:13.557+05:30  INFO 23368 --- [talent-fulfillment-service] [Thread-1] o.a.e.TrackingEventProcessor             : Shutdown state set for Processor 'io.fullstackbasics.talent_fulfillment_service.query.eventhandler'.
+2024-11-17T12:55:13.557+05:30  INFO 23368 --- [talent-fulfillment-service] [Thread-1] o.a.e.TrackingEventProcessor             : Processor 'io.fullstackbasics.talent_fulfillment_service.query.eventhandler' awaiting termination...
+2024-11-17T12:55:13.956+05:30  INFO 23368 --- [talent-fulfillment-service] [EventProcessor[io.fullstackbasics.talent_fulfillment_service.query.eventhandler]-0] o.a.e.TrackingEventProcessor             : Released claim
+2024-11-17T12:55:13.957+05:30  INFO 23368 --- [talent-fulfillment-service] [EventProcessor[io.fullstackbasics.talent_fulfillment_service.query.eventhandler]-0] o.a.e.TrackingEventProcessor             : Worker for segment Segment[0/0] stopped.
+2024-11-17T12:55:13.967+05:30  INFO 23368 --- [talent-fulfillment-service] [Thread-1] i.a.a.c.command.impl.CommandChannelImpl  : Deregistered handler for command 'fullstackbasics.io.tams_core_api.command.CreateTalentFulfillmentCommand' in context 'default'
+2024-11-17T12:55:14.200+05:30  INFO 23368 --- [talent-fulfillment-service] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-17T12:55:14.231+05:30  WARN 23368 --- [talent-fulfillment-service] [Thread-1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-17T12:55:14.232+05:30  INFO 23368 --- [talent-fulfillment-service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-17T12:55:14.233+05:30  INFO 23368 --- [talent-fulfillment-service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-17T12:55:14.233+05:30  INFO 23368 --- [talent-fulfillment-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-11-17T12:55:17.234+05:30  INFO 23368 --- [talent-fulfillment-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-11-17T12:55:17.236+05:30 DEBUG 23368 --- [talent-fulfillment-service] [Thread-1] o.s.web.client.RestTemplate              : HTTP DELETE http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d
+2024-11-17T12:55:17.237+05:30 DEBUG 23368 --- [talent-fulfillment-service] [Thread-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:55:17.241+05:30 DEBUG 23368 --- [talent-fulfillment-service] [Thread-1] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:55:17.242+05:30  INFO 23368 --- [talent-fulfillment-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:0dbc06f468d075c32516e3bfed497f3d - deregister  status: 200
+2024-11-17T12:55:17.242+05:30  INFO 23368 --- [talent-fulfillment-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-11-17T12:55:17.514+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] .f.t.TalentFulfillmentServiceApplication : Starting TalentFulfillmentServiceApplication using Java 17.0.5 with PID 23368 (C:\Users\shrey\git\TAMS\talent-fulfillment-service\target\classes started by shrey in C:\Users\shrey\git\TAMS\talent-fulfillment-service)
+2024-11-17T12:55:17.514+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] .f.t.TalentFulfillmentServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-17T12:55:17.735+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-17T12:55:17.751+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2024-11-17T12:55:17.823+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d9df7e3-dfed-306f-85bc-53bc918a0c04
+2024-11-17T12:55:17.905+05:30  WARN 23368 --- [talent-fulfillment-service] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-11-17T12:55:17.905+05:30  WARN 23368 --- [talent-fulfillment-service] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-11-17T12:55:17.938+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-11-17T12:55:17.939+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-17T12:55:17.939+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-17T12:55:17.964+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-17T12:55:17.964+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 446 ms
+2024-11-17T12:55:17.972+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-11-17T12:55:17.973+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:talent_fulfillment user=SA
+2024-11-17T12:55:17.973+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-11-17T12:55:17.973+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:talent_fulfillment'
+2024-11-17T12:55:17.998+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-17T12:55:18.001+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-17T12:55:18.015+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-17T12:55:18.109+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-17T12:55:18.115+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-17T12:55:18.150+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.Dom4JToByteArrayConverter] is ignored. It seems to rely on a class that is not available in the class loader: org/dom4j/Document
+2024-11-17T12:55:18.150+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.InputStreamToDom4jConverter] is ignored. It seems to rely on a class that is not available in the class loader: org/dom4j/Document
+2024-11-17T12:55:18.150+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.XomToStringConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/Document
+2024-11-17T12:55:18.150+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.InputStreamToXomConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/ParsingException
+2024-11-17T12:55:18.158+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.a.config.AxonIQConsoleModule           : 
+################################################################################################
+## You have not configured AxonIQ Console. AxonIQ Console provides out-of-the box monitoring  ##
+## and management capabilities for your Axon Application, starting with it is free.           ##
+## Visit https://console.axoniq.io for more information!                                      ##
+## Suppress this message by setting system property disable-axoniq-console-message to true.   ##
+################################################################################################
+
+2024-11-17T12:55:18.197+05:30  WARN 23368 --- [talent-fulfillment-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-17T12:55:18.212+05:30 DEBUG 23368 --- [talent-fulfillment-service] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-11-17T12:55:18.236+05:30 DEBUG 23368 --- [talent-fulfillment-service] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-17T12:55:18.244+05:30 DEBUG 23368 --- [talent-fulfillment-service] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-17T12:55:18.254+05:30 DEBUG 23368 --- [talent-fulfillment-service] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-17T12:55:18.300+05:30  WARN 23368 --- [talent-fulfillment-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-11-17T12:55:18.553+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-11-17T12:55:18.568+05:30  WARN 23368 --- [talent-fulfillment-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-11-17T12:55:18.602+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] i.a.a.c.impl.AxonServerManagedChannel    : Requesting connection details from localhost:8124
+2024-11-17T12:55:18.615+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] i.a.a.c.impl.AxonServerManagedChannel    : Successfully connected to localhost:8124
+2024-11-17T12:55:18.615+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] i.a.a.connector.impl.ControlChannelImpl  : Connected instruction stream for context 'default'. Sending client identification
+2024-11-17T12:55:18.617+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] i.a.a.c.command.impl.CommandChannelImpl  : CommandChannel for context 'default' connected, 0 command handlers registered
+2024-11-17T12:55:18.617+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] i.a.a.c.command.impl.CommandChannelImpl  : Registered handler for command 'fullstackbasics.io.tams_core_api.command.CreateTalentFulfillmentCommand' in context 'default'
+2024-11-17T12:55:18.618+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] i.a.a.c.query.impl.QueryChannelImpl      : QueryChannel for context 'default' connected, 0 registrations resubscribed
+2024-11-17T12:55:18.619+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] i.a.a.c.query.impl.QueryChannelImpl      : Registered handler for query 'io.fullstackbasics.talent_fulfillment_service.query.query.FindTalentFulfillmentByTalentFulfillmentIdQuery : io.fullstackbasics.talent_fulfillment_service.query.dto.TalentFulfillmentQueryResponseDTO' in context 'default'
+2024-11-17T12:55:18.619+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] i.a.a.c.query.impl.QueryChannelImpl      : Registered handler for query 'io.fullstackbasics.talent_fulfillment_service.query.query.FindAllTalentFulfillmentRequestsQuery : java.util.List<io.fullstackbasics.talent_fulfillment_service.query.dto.TalentFulfillmentQueryResponseDTO>' in context 'default'
+2024-11-17T12:55:18.632+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 59757 (http) with context path '/'
+2024-11-17T12:55:18.632+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 59757
+2024-11-17T12:55:18.633+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-11-17T12:55:18.635+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-11-17T12:55:18.635+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-11-17T12:55:18.636+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-11-17T12:55:18.636+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-11-17T12:55:18.636+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-11-17T12:55:18.636+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-11-17T12:55:18.636+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-11-17T12:55:18.636+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-11-17T12:55:18.636+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-11-17T12:55:18.642+05:30 DEBUG 23368 --- [talent-fulfillment-service] [restartedMain] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2024-11-17T12:55:18.651+05:30  INFO 23368 --- [talent-fulfillment-service] [EventProcessor[io.fullstackbasics.talent_fulfillment_service.query.eventhandler]-0] o.a.e.TrackingEventProcessor             : Worker assigned to segment Segment[0/0] for processing
+2024-11-17T12:55:18.652+05:30  INFO 23368 --- [talent-fulfillment-service] [EventProcessor[io.fullstackbasics.talent_fulfillment_service.query.eventhandler]-0] o.a.e.TrackingEventProcessor             : Using current Thread for last segment worker: TrackingSegmentWorker{processor=io.fullstackbasics.talent_fulfillment_service.query.eventhandler, segment=Segment[0/0]}
+2024-11-17T12:55:18.654+05:30  INFO 23368 --- [talent-fulfillment-service] [EventProcessor[io.fullstackbasics.talent_fulfillment_service.query.eventhandler]-0] o.a.e.TrackingEventProcessor             : Fetched token: ReplayToken{currentToken=null, tokenAtReset=IndexTrackingToken{globalIndex=2}, context=null} for segment: Segment[0/0]
+2024-11-17T12:55:18.691+05:30 DEBUG 23368 --- [talent-fulfillment-service] [restartedMain] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:55:18.694+05:30 DEBUG 23368 --- [talent-fulfillment-service] [restartedMain] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:55:18.694+05:30 DEBUG 23368 --- [talent-fulfillment-service] [restartedMain] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:55:18.695+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-11-17T12:55:18.696+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-11-17T12:55:18.696+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-11-17T12:55:18.696+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1731828318696 with initial instances count: 3
+2024-11-17T12:55:18.697+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TALENT-FULFILLMENT-SERVICE with eureka with status UP
+2024-11-17T12:55:18.697+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1731828318697, current=UP, previous=STARTING]
+2024-11-17T12:55:18.697+05:30  INFO 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34: registering service...
+2024-11-17T12:55:18.700+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE
+2024-11-17T12:55:18.701+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:55:18.703+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34, appName = TALENT-FULFILLMENT-SERVICE, hostName = 192.168.1.36, status = UP, ipAddr = 192.168.1.36, port = 59757, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@14d6f117] as "application/json"
+2024-11-17T12:55:18.708+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2024-11-17T12:55:18.708+05:30  INFO 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34 - registration status: 204
+2024-11-17T12:55:18.856+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] .f.t.TalentFulfillmentServiceApplication : Started TalentFulfillmentServiceApplication in 1.562 seconds (process running for 465.248)
+2024-11-17T12:55:18.857+05:30  INFO 23368 --- [talent-fulfillment-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-17T12:55:48.709+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-17T12:55:48.710+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:55:48.714+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34?status=UP&lastDirtyTimestamp=1731828318697
+2024-11-17T12:55:48.717+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:55:48.722+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:55:48.723+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:55:48.723+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2024-11-17T12:55:48.724+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:55:48.725+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:55:48.725+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:55:48.728+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:56:18.743+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34?status=UP&lastDirtyTimestamp=1731828318697
+2024-11-17T12:56:18.743+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:56:18.745+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-17T12:56:18.745+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:56:18.748+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:56:18.750+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:56:18.750+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:56:18.753+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2024-11-17T12:56:18.753+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:56:18.755+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:56:18.755+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:56:48.771+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-17T12:56:48.774+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:56:48.772+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34?status=UP&lastDirtyTimestamp=1731828318697
+2024-11-17T12:56:48.777+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:56:48.781+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:56:48.781+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:56:48.785+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:57:18.795+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-17T12:57:18.795+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34?status=UP&lastDirtyTimestamp=1731828318697
+2024-11-17T12:57:18.796+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:57:18.796+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:57:18.799+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:57:18.799+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:57:18.799+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:57:48.801+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-17T12:57:48.802+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34?status=UP&lastDirtyTimestamp=1731828318697
+2024-11-17T12:57:48.802+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:57:48.802+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:57:48.808+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:57:48.808+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-17T12:57:48.810+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-17T12:58:03.579+05:30  INFO 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-17T12:58:03.580+05:30  INFO 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application TALENT-FULFILLMENT-SERVICE with eureka with status DOWN
+2024-11-17T12:58:03.580+05:30  INFO 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1731828483580, current=DOWN, previous=UP]
+2024-11-17T12:58:03.580+05:30  INFO 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34: registering service...
+2024-11-17T12:58:03.580+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE
+2024-11-17T12:58:03.580+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:58:03.581+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34, appName = TALENT-FULFILLMENT-SERVICE, hostName = 192.168.1.36, status = DOWN, ipAddr = 192.168.1.36, port = 59757, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@14d6f117] as "application/json"
+2024-11-17T12:58:03.589+05:30 DEBUG 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2024-11-17T12:58:03.589+05:30  INFO 23368 --- [talent-fulfillment-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34 - registration status: 204
+2024-11-17T12:58:03.760+05:30  INFO 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] o.a.e.TrackingEventProcessor             : Shutdown state set for Processor 'io.fullstackbasics.talent_fulfillment_service.query.eventhandler'.
+2024-11-17T12:58:03.760+05:30  INFO 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] o.a.e.TrackingEventProcessor             : Processor 'io.fullstackbasics.talent_fulfillment_service.query.eventhandler' awaiting termination...
+2024-11-17T12:58:04.741+05:30  INFO 23368 --- [talent-fulfillment-service] [EventProcessor[io.fullstackbasics.talent_fulfillment_service.query.eventhandler]-0] o.a.e.TrackingEventProcessor             : Released claim
+2024-11-17T12:58:04.741+05:30  INFO 23368 --- [talent-fulfillment-service] [EventProcessor[io.fullstackbasics.talent_fulfillment_service.query.eventhandler]-0] o.a.e.TrackingEventProcessor             : Worker for segment Segment[0/0] stopped.
+2024-11-17T12:58:04.748+05:30  INFO 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] i.a.a.c.command.impl.CommandChannelImpl  : Deregistered handler for command 'fullstackbasics.io.tams_core_api.command.CreateTalentFulfillmentCommand' in context 'default'
+2024-11-17T12:58:05.454+05:30  INFO 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-17T12:58:05.455+05:30  WARN 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-17T12:58:05.455+05:30  INFO 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-11-17T12:58:05.455+05:30  INFO 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-11-17T12:58:05.455+05:30  INFO 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-11-17T12:58:08.457+05:30  INFO 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-11-17T12:58:08.457+05:30 DEBUG 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] o.s.web.client.RestTemplate              : HTTP DELETE http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34
+2024-11-17T12:58:08.458+05:30 DEBUG 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:58:08.474+05:30  INFO 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:915)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:895)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:672)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1156)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1102)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72)
+	at jdk.internal.reflect.GeneratedMethodAccessor30.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:91)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:90)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:123)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:189)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:450)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:170)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
+	... 74 more
+
+2024-11-17T12:58:08.475+05:30  WARN 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2024-11-17T12:58:08.479+05:30 DEBUG 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] o.s.web.client.RestTemplate              : HTTP DELETE http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34
+2024-11-17T12:58:08.479+05:30 DEBUG 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-17T12:58:08.480+05:30  INFO 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:915)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:895)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:672)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1156)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1102)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72)
+	at jdk.internal.reflect.GeneratedMethodAccessor30.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:91)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:90)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:123)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:189)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:450)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:170)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
+	... 75 more
+
+2024-11-17T12:58:08.481+05:30  WARN 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2024-11-17T12:58:08.481+05:30 ERROR 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TALENT-FULFILLMENT-SERVICE/talent-fulfillment-service:df059d0f443112e0de28dfe2cc40cd34 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.3.jar:2.0.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.3.jar:2.0.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-2.0.3.jar:2.0.3]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.3.jar:2.0.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.3.jar:2.0.3]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919) ~[eureka-client-2.0.3.jar:2.0.3]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900) ~[eureka-client-2.0.3.jar:2.0.3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389) ~[spring-cloud-context-4.1.4.jar:4.1.4]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136) ~[spring-cloud-context-4.1.4.jar:4.1.4]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1195) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1156) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1102) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-3.3.3.jar:3.3.3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72) ~[na:na]
+	at jdk.internal.reflect.GeneratedMethodAccessor30.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor32.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-11-17T12:58:08.484+05:30  INFO 23368 --- [talent-fulfillment-service] [RMI TCP Connection(21)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

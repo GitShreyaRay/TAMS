@@ -7,17 +7,18 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Component;
 
 import io.fullstackbasics.talent_request_service.core.events.TalentRequestCreatedEvent;
+import io.fullstackbasics.talent_request_service.core.events.TalentRequestStatusUpdatedEvent;
 import io.fullstackbasics.talent_request_service.query.repository.TalentRequest;
-import io.fullstackbasics.talent_request_service.query.repository.TalentRequestRepository;
+import io.fullstackbasics.talent_request_service.query.repository.TalentFulfillmentRepository;
 
 @Component
 public class TalentRequestEventHandler {
 	
 	private final Logger log = LoggerFactory.getLogger(TalentRequestEventHandler.class);
 
-	private TalentRequestRepository talentRequestRepository;
+	private TalentFulfillmentRepository talentRequestRepository;
 	
-	public TalentRequestEventHandler(TalentRequestRepository talentRequestRepository) {
+	public TalentRequestEventHandler(TalentFulfillmentRepository talentRequestRepository) {
 		this.talentRequestRepository = talentRequestRepository;
 		
 	}
@@ -31,4 +32,14 @@ public class TalentRequestEventHandler {
 		talentRequestRepository.save(talentRequest);
 		
 	}
+	 
+	 @EventHandler
+	 public void on(TalentRequestStatusUpdatedEvent talentRequestStatusUpdatedEvent) {
+		 
+		 TalentRequest talentRequest = talentRequestRepository.findById(talentRequestStatusUpdatedEvent.getTalentRequestId()).get();
+		 talentRequest.setRequestStatus(talentRequestStatusUpdatedEvent.getRequestStatus());
+		 log.info("Reached here to try to update Talent Request Status");
+		 talentRequestRepository.save(talentRequest);
+		 
+	 }
 }
